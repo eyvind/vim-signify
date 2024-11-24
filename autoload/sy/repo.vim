@@ -635,7 +635,7 @@ let s:default_vcs_cmds = {
       \ 'accurev':  'accurev diff %f -- -U0',
       \ 'perforce': 'p4 info '. sy#util#shell_redirect('%n') . (has('win32') ? ' &&' : ' && env P4DIFF= P4COLORS=') .' p4 diff -du0 %f',
       \ 'tfs':      'tf diff -version:W -noprompt -format:Unified %f',
-      \ 'jj':       'jj diff --no-pager --color=never --git --context=0 -- %f',
+      \ 'jujutsu':  'jj diff --no-pager --color=never --git --context=0 -- %f',
       \ }
 
 let s:default_vcs_cmds_diffmode = {
@@ -651,7 +651,7 @@ let s:default_vcs_cmds_diffmode = {
       \ 'accurev':  'accurev cat %f',
       \ 'perforce': 'p4 print %f',
       \ 'tfs':      'tf view -version:W -noprompt %f',
-      \ 'jj':       'jj file show --no-pager -r @- -- %f',
+      \ 'jujutsu':  'jj file show --no-pager -r @- -- %f'
       \ }
 
 if exists('g:signify_vcs_cmds')
