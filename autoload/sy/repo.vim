@@ -225,8 +225,8 @@ function! s:check_diff_perforce(exitval, diff) abort
   return a:exitval ? [0, []] : [1, a:diff]
 endfunction
 
-" s:check_diff_jj {{{1
-function! s:check_diff_jj(exitval, diff) abort
+" s:check_diff_jujutsu {{{1
+function! s:check_diff_jujutsu(exitval, diff) abort
   return a:exitval ? [0, []] : [1, a:diff]
 endfunction
 
